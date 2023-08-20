@@ -63,7 +63,7 @@ form .form-div p{
     top: 24%;
     left: 2%;
 }
-@media (max-width: 250px) {
+@media only screen and (max-width: 250px) {
     .form-div{
         display: flex;
         justify-content: flex-start;
@@ -103,12 +103,12 @@ form .form-div p{
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     form input{
         width: 70% !important;
     }
 }
-@media (max-width: 992px){
+@media only screen and (max-width: 992px){
     form input{
         width: 70% !important;
     }
