@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /* .mySlides {display: none;} */
+    /* img {vertical-align: middle;} */
+}
+:root{
+    --primary: #EA9337;
+    --secondary:#25282D ;
+    --text:#ECEDEE;
+    --bg: #444851;
+}
+a{
+    text-decoration: none;
+    color: var(--text); 
+} 
+li{
+    list-style: none;
+}
+
+.btn{
+    border-radius: 0;
+    border: 1px solid transparent;
+    transition:.3s ease all;
+    padding: 0.75rem 2.4rem;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+span{
+    color: var(--primary);
+}
+.sec-3{
+    width: 100% !important;
+    height: 75vh !important;
+    background-color: var(--secondary);
+}
+.sec-3 .container{
+    width: 90% !important;
+    margin-inline: auto !important;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.sec-3 .container .img-wrapper img{
+    height: 100% !important;
+    filter: grayscale(100%);
+}
+.sec-3  .img-wrapper{
+    position: relative;
+}
+.sec-3 .text-wrapper p{
+    font-size: 0.8rem;
+}
+.sec-3 .text-wrapper h3{
+    font-size: 1rem;
+    color: var(--primary) !important;
+    margin-top: 1rem !important;
+}
+.sec-3 .text-wrapper {
+    /* display: none; */
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    bottom: 1%;
+    left: 2%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.sec-3 .img-wrapper:hover img{
+    filter: grayscale(10%);
+    transform: scale(1.5);
+}
+.sec-3 .img-wrapper:hover .text-wrapper {
+    opacity: 1;
+}
+@media only screen and (max-width: 750px){
+    .sec-3 .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 1rem;
+    }
+    .sec-3{
+        height: 100vh !important;
+    }
+}
+@media only screen and (max-width: 430px){
+    .sec-3 .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sec-3{
+        height: 130vh !important;
+    }
+    .sec-3 .btn-2{
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .sec-3{
+        height: 120vh !important;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .sec-3{
+        height: 100vh !important;
+    }
+    .sec-3 .btn-2{
+        font-size: 0.5rem;
+    }
+}

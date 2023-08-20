@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* *{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    .mySlides {display: none;}
+    
+} */
+:root{
+    --primary: #EA9337;
+    --secondary:#25282D ;
+    --text:#ECEDEE;
+    --bg: #444851;
+}
+a{
+    text-decoration: none;
+    color: var(--text); 
+} 
+li{
+    list-style: none;
+}
+
+span{
+    color: var(--primary);
+}
+
+/* for the user icon in navigation bar */
+.userPhoto {
+    padding-left: 2rem;
+  }
+  
+  /* for the bell icon used for notifications in navigation bar */
+  .bell {
+    padding: 0 2rem;
+  }
+  
+  /* for the search bar used in navigation bar*/
+  .searchBar {
+    padding-right: 3rem;
+    margin: 0 0.1rem;
+  }
+  
+  /* for the side menu of dashboard */
+  #sideMenu {
+    background-color: #3B2042;
+    left: 0;
+    width: 15rem;
+    padding-top: 2.2rem;
+    position: fixed;
+    height: 100%;
+  }
+  
+  /* for the links that are in the side menu */
+  #sideMenu nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* for the active link in the side menu */
+  #sideMenu nav a.active {
+    background-color: #221C35;
+    border-left: 5px solid #cc5500;
+  }
+  
+  /* links in side menu when we hover over on them */
+  #sideMenu nav a:hover {
+    background-color: var(--primary);
+    border-left: 5px solid #cc5500;
+  }
+  
+  /* hor hr tag */
+  hr {
+    background-color: #221C35;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* for checkbox */
+  #check {
+    display: none;
+  }
+  
+  /* this is for buttons to open side bar and close side bar on small screens */
+  label #btn, label #cancel {
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  label #btn {
+    left: 40px;
+    top: 4rem;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+  }
+  
+  label #cancel {
+    z-index: 1111;
+    left: -15rem;
+    top: 4rem;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  }
+  
+  /* this is for dropdown of user icon */
+  .dropdown-item:hover {
+    background-color: #ffc594;
+  }
+  
+  .dropdown-divider {
+    margin: 0;
+  }
+  
+  .dropdown-item {
+    padding: 1rem auto;
+  }
+  
+  /* media queries for open and close side bar using bars button and cancel button on small screen*/
+  @media(max-width:1000px) {
+    #sideMenu {
+      left: -15rem;
+      position: absolute;
+      z-index: 111111;
+      padding-top: 0;
+      margin-top: 2rem;
+    }
+  
+    #check:checked~#sideMenu {
+      left: 0;
+    }
+  
+    #check:checked~label #btn {
+      left: 15rem;
+      opacity: 0;
+      pointer-events: none;
+    }
+  
+    #check:checked~label #cancel {
+      left: 15rem;
+    }
+  }
+/* dashboard code */
+.dash {
+    margin: 5rem 1rem 1rem 15.5rem;
+}
+
+#curve_chart {
+    border: 1px solid #042331;
+    height: 450px;
+    width: 88%;
+}
+
+/*pie chart's heading*/
+#heading {
+    margin-left: 0.5rem;
+}
+
+#donutchart {
+    border: #042331 1px;
+    border-style: solid;
+    height: 300px;
+}
+
+#progress {
+    margin-top: 3rem;
+}
+
+table {
+    text-align: center;
+}
+input {
+    border: 0;
+    width: 90%;
+    text-align: center;
+}
+
+input:focus {
+    outline: 0;
+}
+
+@media(max-width:1000px) {
+    .dash {
+        margin-top: 7rem;
+        margin-left: 0 !important;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .dashChart {
+        width: 75%;
+        padding-right: 0;
+    }
+
+    #donutchart {
+        width: 75%;
+    }
+
+    .dashTable {
+        width: 75%;
+    }
+
+    .newbtn {
+        margin: 2rem 2rem 2rem 5rem !important;
+        
+
+    }
+}
+
+@media(max-width:700px) {
+    .dashChart {
+        width: 75%;
+    }
+
+    #donutchart {
+        width: 85%;
+    }
+
+    .dashTable {
+        width: 85%;
+    }
+}
+
+@media(max-width:500px) {
+    .dashChart {
+        width: 85%;
+    }
+
+    #donutchart {
+        width: 82%;
+    }
+}
+
+.newbtn {
+    margin: 2rem 2rem 2rem 37rem;
+    
+
+}
+
+/* dropdown's code*/
+.dropdown-item:hover {
+    background-color: #ffc594;
+}
+
+.dropdown-divider {
+    margin: 0;
+}
+
+.dropdown-item {
+    padding: 1rem auto;
+}
