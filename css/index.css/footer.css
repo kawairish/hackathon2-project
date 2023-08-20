@@ -90,10 +90,16 @@ span{
         display: flex;
         gap: 5rem !important;
     }
+    .footer-sec1 .footer-icons{
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
 }
-@media only screen and (max-width: 330px){
+
+@media only screen and (max-width: 390px){
     .footer-sec1{
         width: 100% !important;
-        height: 110vh !important;
+        height: 130vh !important;
     }
 }

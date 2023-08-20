@@ -73,6 +73,12 @@
         grid-template-columns: 1fr !important;
     }
 }
+@media only screen and (max-width: 390px){
+    .sec-1{
+        margin-top: -2rem !important;
+        height: 195vh !important;
+    }
+}
 @media only screen and (max-width: 300px){
     .sec-1{
         margin-top: 0rem !important;
