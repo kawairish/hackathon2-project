@@ -82,11 +82,24 @@ form .form-div p{
         width: 50% !important;
     }
 }
-
+@media only screen and (max-width: 500px) {
+    .login-container .login-icon{
+        width: 30% !important;
+        margin-inline: auto !important;
+        display: flex;
+        gap: 2rem !important;
+    }
+}
 @media only screen and (max-width: 576px) {
     
     .login-container .btn{
         padding:.5em!important ;
+    }
+    .login-container .login-icon{
+        width: 40% !important;
+        margin-inline: auto !important;
+        display: flex;
+        gap: 2rem !important;
     }
 }
 

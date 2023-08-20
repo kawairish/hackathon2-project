@@ -62,7 +62,7 @@ form .form-div p{
     top: 24%;
     left: 2%;
 }
-@media (max-width: 250px) {
+@media only screen and (max-width: 250px) {
     .form-div{
         display: flex;
         justify-content: flex-start;
@@ -81,20 +81,31 @@ form .form-div p{
         width: 50% !important;
     }
 }
-
+@media only screen and (max-width: 500px) {
+    .login-container .login-icon{
+        width: 30% !important;
+        margin-inline: auto !important;
+        display: flex;
+        gap: 2rem !important;
+    }
+}
 @media only screen and (max-width: 576px) {
     
     .login-container .btn{
         padding:.5em!important ;
     }
+    .login-container .login-icon{
+        width: 40% !important;
+        margin-inline: auto !important;
+    }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     form input{
         width: 70% !important;
     }
 }
-@media (max-width: 992px){
+@media only screen and (max-width: 992px){
     form input{
         width: 70% !important;
     }
