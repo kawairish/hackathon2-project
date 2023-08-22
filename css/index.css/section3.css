@@ -13,6 +13,10 @@
     --text:#ECEDEE;
     --bg: #444851;
 }
+/* body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+} */
 a{
     text-decoration: none;
     color: var(--text); 
@@ -63,6 +67,7 @@ span{
     /* display: none; */
     position: absolute;
     color: white;
+    background-color: black;
     font-weight: 400;
     bottom: 1%;
     left: 2%;
@@ -70,8 +75,10 @@ span{
     transition: opacity 0.3s;
 }
 .sec-3 .img-wrapper:hover img{
+    width: 220px !important;
+    border-radius: 8px;
     filter: grayscale(10%);
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .sec-3 .img-wrapper:hover .text-wrapper {
     opacity: 1;
